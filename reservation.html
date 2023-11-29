@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Booking Reservation Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reservation.css">
+    </head>
+    <body>
+	
+	<nav>
+    <ul class="nav-flex-row">
+      <li class="nav-item">
+        <a href="C:\Web App\restaurant-website\index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="C:\Web App\restaurant-website\about_us.html">About us</a>
+      </li>
+      <li class="nav-item">
+        <a href="C:\Web App\restaurant-website\menu.html">Menu</a>
+      </li>
+    </ul>
+  </nav>
+
+        
+        <section class = "banner">
+            <h2>BOOK YOUR TABLE NOW</h2>
+            <div class = "card-container">
+                <div class = "card-img">
+				
+                </div>
+
+                <div class = "card-content">
+                    <h3>Reservation</h3>
+                    <form name="myForm" onsubmit="return validateForm()">
+
+                        <div class = "form-row">
+                            <select  id="days" name = "days" required>
+                                <option value = "day-select">Select Day</option>
+                                <option value = "sunday">Sunday</option>
+                                <option value = "monday">Monday</option>
+                                <option value = "tuesday">Tuesday</option>
+                                <option value = "wednesday">Wednesday</option>
+                                <option value = "thursday">Thursday</option>
+                                <option value = "friday">Friday</option>
+                                <option value = "saturday">Saturday</option>
+                            </select>
+
+                            <select id="hours" name = "hours" required>
+                                <option value = "hour-select">Select Hour</option>
+								<option value = "8">8: 00</option>
+                                <option value = "9">9: 00</option>
+                                <option value = "10">10: 00</option>
+                                <option value = "10">12: 00</option>
+                                <option value = "10">14: 00</option>
+                                <option value = "10">16: 00</option>
+                                <option value = "10">18: 00</option>
+                                <option value = "10">20: 00</option>
+                                <option value = "10">22: 00</option>
+                            </select>
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "text" id="fname" placeholder="Full Name" required>
+                            <input type = "number" id="pnumber" placeholder="Phone Number" required>
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "number" id="persons" placeholder="How Many Persons?" min = "1" required>
+                            <input type = "submit" value = "BOOK TABLE">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+	 <script>
+function validateForm() {
+  let x = document.forms["myForm"]["days","hours","fname","pnumber","persons"].value;
+  if (x == "") {
+    alert("All fields must be filled out");
+    return false;}
+else{
+alert("We have booked your table. Thank you");
+  }
+}
+</script>
+</html>

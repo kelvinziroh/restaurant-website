@@ -1,0 +1,81 @@
+body, h1, h2, h3, p, img, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Big Shoulders Text', cursive;
+  line-height: 1.6;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/banner-img.jpg") center/cover no-repeat;
+}
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+	
+}
+
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+section#about {
+  padding: 4rem 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 0rem;
+  background-color: #f9f9f9;
+
+}
+
+.container img {
+  max-width: 50%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .content {
+  max-width: 45%;
+}
+
+.container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container p {
+  margin-bottom: 1.5rem;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: black;
+}
